@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/task_07.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="container">
+{% for new in news %}
+    <div class="news-item">
+        <h3>{{ new.title }}</h3>
+        <p>{{ new.description }}</p>
+        <p class="create_at">{{ new.create_at }}</p>
+    </div>
+{% endfor %}
+</div>
+</body>
+</html>
