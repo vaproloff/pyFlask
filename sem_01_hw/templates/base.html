@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>
+        {% block title %}
+            Title
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/catalog/clothes/">Одежда</a></li>
+            <li><a href="/catalog/shoes/">Обувь</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        {% block content %}
+            Страница не заполнена
+        {% endblock %}
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <p>Все права защищены</p>
+    </div>
+</div>
+</body>
+</html>

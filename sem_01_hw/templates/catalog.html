@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    {% for i in range(items | length) %}
+        <div class="item">
+            <a class="img-container" href="{{ i + 1 }}">
+                <img src="/static/images/{{ items[i].img }}" alt="{{ items[i].description }}" class="item-image">
+            </a>
+            <p class="item-name">{{ items[i].brand }}</p>
+            <p class="item-description">{{ items[i].description }}</p>
+            <p class="item-price">{{ items[i].price }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
