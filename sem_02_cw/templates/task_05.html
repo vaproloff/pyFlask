@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+<form method="post">
+    <input type="number" name="num-a">
+    <br>
+    <label for="add">+</label>
+    <input type="radio" id="add" name="operation" value="+" checked>
+    <label for="sub">-</label>
+    <input type="radio" id="sub" name="operation" value="-">
+    <label for="mul">*</label>
+    <input type="radio" id="mul" name="operation" value="*">
+    <label for="div">/</label>
+    <input type="radio" id="div" name="operation" value="/">
+    <br>
+    <input type="number" name="num-b">
+    <br>
+    <input type="submit" value="Вычислить">
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+<form method="post">
+    <input type="text" name="name" placeholder="Имя">
+    <input type="text" name="age" placeholder="Возраст">
+    <input type="submit" value="Отправить">
+</form>
+{% endblock %}
